@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>城市周末旅行指南 · 发现你的下一个周末</title>
+  <meta name="description" content="精选全国适合周末出发的城市旅行指南：美食、自然、文艺、烟火气，总有一个地方配得上你难得的休息。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- 导航 -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark">🧭</span>
+        <span class="brand__name">城市周末</span>
+      </a>
+      <nav class="nav__links">
+        <a href="#top" class="active">首页</a>
+        <a href="#destinations">目的地</a>
+        <a href="map.html">分布地图</a>
+        <a href="#inspiration">灵感</a>
+        <a href="#about">关于</a>
+      </nav>
+      <button class="nav__cta">开始探索</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero 主视觉 -->
+    <section class="hero">
+      <div class="hero__glow"></div>
+      <div class="hero__inner">
+        <p class="hero__eyebrow">2–3 天 · 说走就走</p>
+        <h1 class="hero__title">发现你的下一个<br />周末目的地</h1>
+        <p class="hero__subtitle">精选全国适合周末出发的城市——美食、自然、文艺、烟火气，总有一个地方，配得上你难得的休息时间。</p>
+        <form class="hero__search" id="search-form">
+          <span class="hero__search-icon">🔍</span>
+          <input type="text" id="search-input" placeholder="想去哪座城市？或想做点什么？" aria-label="搜索目的地" autocomplete="off" />
+          <button type="submit">搜索</button>
+        </form>
+        <div class="hero__stats">
+          <div><strong>20+</strong><span>精选城市</span></div>
+          <div class="hero__stat-divider"></div>
+          <div><strong>4 类</strong><span>旅行主题</span></div>
+          <div class="hero__stat-divider"></div>
+          <div><strong>2–3天</strong><span>最佳节奏</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 目的地 -->
+    <section id="destinations" class="section">
+      <div class="section__head">
+        <h2 class="section__title">热门周末目的地</h2>
+        <p class="section__desc">从烟火气到山水间，挑一个离你最近的好去处。</p>
+      </div>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="destinations-grid"></div>
+      <p class="search-status" id="search-status" hidden></p>
+    </section>
+
+    <!-- 灵感 -->
+    <section id="inspiration" class="inspiration">
+      <div class="inspiration__inner">
+        <h2>不知道去哪？让灵感替你选</h2>
+        <p>告诉我们今天的心情，随机推荐一座说走就走的城市。</p>
+        <div class="inspiration__moods">
+          <button>想放空</button>
+          <button>想吃喝</button>
+          <button>想拍照</button>
+          <button>想遛娃</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer id="about" class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">🧭</span>
+        <span class="brand__name">城市周末</span>
+        <p>为每一个想出门的周末，准备一份可信赖的指南。</p>
+      </div>
+      <div class="footer__cols">
+        <div>
+          <h4>探索</h4>
+          <a href="#destinations">目的地</a>
+          <a href="map.html">分布地图</a>
+          <a href="#">周末路线</a>
+        </div>
+        <div>
+          <h4>关于</h4>
+          <a href="#">关于我们</a>
+          <a href="#">投稿合作</a>
+          <a href="#">联系我们</a>
+        </div>
+      </div>
+    </div>
+    <p class="footer__copy">© 2026 城市周末旅行指南 · 纯前端 Demo</p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
